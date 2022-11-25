@@ -1,0 +1,8 @@
+<template name="song_tpl">
+    <view class="movie-container">
+        <image class="movie-img" src="{{image_url}}"></image>
+        <text class="movie-title">歌名：  {{name}}</text>
+        <text class="movie-title">专辑：  {{albumname}}</text>
+        <text class="movie-title">歌手：  {{singer}}</text>
+    </view>
+</template>

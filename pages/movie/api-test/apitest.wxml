@@ -1,0 +1,15 @@
+<!--pages/movie/api-test/apitest.wxml-->
+<import src="../api-tpl/api_tpl"></import>
+
+<view>
+    <view class="title-view">
+        <text class = 'single-title'>当前热歌</text>
+    </view>
+    <view class="grid-container">
+        <block wx:for = "{{songs}}" wx:for-item = "song">
+            <view class = "single-view-container">
+                <template is = 'song_tpl' data="{{...song}}"/>
+            </view>
+        </block>
+  </view>
+</view>
