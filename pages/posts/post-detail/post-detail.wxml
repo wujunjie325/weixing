@@ -1,0 +1,30 @@
+<view class="container">
+  <image class="head-image" src="{{post.imgSrc}}"></image>
+  <text class="title">{{post.title}} </text>
+  <view class="author-date">
+  <view class="author-box">
+    <image class="avatar" src="{{post.avatar}}"></image>
+    <text class="author">{{post.author}};</text>
+  </view>
+  <text class="date"> {{post.dateTime}}</text>
+</view>
+<text class="detail"> {{post.detail}}</text>
+</view>
+
+<view class="tool">
+  <view class="tool-item" catchtap="onUpTap" data-post-id="{{post.postId}}">
+     <image wx:if="{{post.upStatus}}"
+     src="/images/icon/star.png" />
+     <image wx:else src="/images/icon/chat.png" />
+    <text>{{post.upNum}}</text>
+  </view>
+  <view class="tool-item comment" catchtap="onCommentTap" data-post-id="{{post.postId}}">
+    <image src="/images/icon/view.png" />
+    <text>{{post.reading}}</text>
+  </view>
+  <view class="tool-item" catchtap="onCollectionTap" data-post-id="{{post.postId}}">
+    <image wx:if="{{post.collectionStatus}}" src="/images/icon/collection.png" />
+    <image wx:else src="/images/icon/collection-anti.png" />
+    <text>{{post.collection}}</text>
+  </view>
+</view>

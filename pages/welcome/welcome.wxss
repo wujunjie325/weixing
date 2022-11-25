@@ -1,0 +1,38 @@
+page{
+  background-color: #ecc0a8;
+}
+.container{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar{
+  width: 200rpx;
+  height: 200rpx;
+  margin-top: 160rpx;
+}
+
+.motto{
+
+  color: #9F4311;
+  margin-top: 100rpx;
+  font-weight: bold;
+}
+
+.journey{
+  font-size: 22rpx;
+  font-weight: bold;
+  line-height: 80rpx;
+  color: #EA5A3C;
+}
+
+.journey-container{
+  width: 200rpx;
+  height: 80rpx;
+  border: 1px solid #EA5A3C;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 100rpx;
+}

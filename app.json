@@ -1,0 +1,34 @@
+{
+  "pages": [
+    "pages/welcome/welcome",
+    "pages/posts/posts",
+    "pages/posts/post-detail/post-detail",
+    "pages/posts/post-comment/post-comment",
+    "pages/movie/movie",
+    "pages/movie/more-movie/more-movie"
+  ],
+  "tabBar": {
+    "color": "#aa3a33",
+    "selectedColor": "#4a6a41",
+    "position": "bottom",
+    "list": [{
+      "pagePath": "pages/posts/posts",
+      "text": "文章",
+      "iconPath": "images/icon/collection-anti.png",
+      "selectedIconPath": "images/icon/collection.png"
+    }, {
+      "pagePath": "pages/movie/movie",
+      "text": "光影",
+      "iconPath": "images/icon/share-anti.png",
+      "selectedIconPath": "images/icon/share.png"
+    }]
+  },
+    "window": {
+      "navigationBarBackgroundColor": "#ecc0a8",
+      "navigationBarTextStyle": "white",
+      "navigationBarTitleText": "欢迎光临",
+      "backgroundColor": "#eeeeee",
+      "backgroundTextStyle": "light"
+  },
+  "sitemapLocation": "sitemap.json"
+}

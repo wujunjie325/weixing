@@ -1,0 +1,2 @@
+/* pages/movie/more-movie/more-movie.wxss */
+@import '../movie-grird/movie-grird-tpl.wxss';

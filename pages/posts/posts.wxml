@@ -1,0 +1,25 @@
+<!--pages/posts/posts.wxml-->
+<!-- 实现轮播图部分 -->
+<view>
+  <swiper autoplay="false" vertical="{{false}}" interval="2000" duration="1500" circular="true" indicator-dots="true" indicator-active-color="red" indicator-color="yellow">
+    <swiper-item>
+      <image src="/images/post/cat.png"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/post/crab.png"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/post/sls.jpg"></image>
+    </swiper-item>
+  </swiper>
+</view>
+
+<!-- 导入模板的位置 -->
+<import src="post-item/post-item-tpl"/>
+
+<!-- 文章列表部分 -->
+<block wx:for="{{postDate}}" wx:for-item="item">
+<view catchtap="onTapToDetail" data-post-id="{{item.postId}}">
+  <template is="postItemTpl" data="{{...item}}"/>
+</view>
+</block>

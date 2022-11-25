@@ -1,0 +1,26 @@
+<!--pages/posts/post-comment/post-comment.wxml-->
+<view class="comment-detail-box">
+  <view class="comment-main-box">
+    <view class="comment-title">评论………（共{{comments.length}}条）</view>
+    <block wx:for="{{comments}}" wx:for-item="item" wx:for-index="idx">
+      <view class="comment-item">
+        <view class="comment-item-header">
+            <view class="left-img">
+                <image src="{{item.avatar}}"></image>
+            </view>
+            <view class="right-user">
+                <text class="user-name">{{item.username}}</text>
+            </view>
+        </view>
+      </view>      
+        <view class="comment-body">
+         <!-- 如果有文字评论的话，通过条件渲染显示文字评论 -->
+            <view class="comment-txt" wx:if="{{item.content.txt}}">
+                <text>{{item.content.txt}}</text>
+            </view>
+         <!-- 如果有声音评论的话，通过条件渲染显示声音评论，并且可以点击播放 -->
+            <view class="comment-voice" wx:if="{{item.content.audio && item.content.audio.url}}"></view>
+            </view>
+        </block>
+    </view>
+</view>

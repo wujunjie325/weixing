@@ -1,0 +1,10 @@
+/* pages/posts/posts.wxss */
+swiper{
+  widows: 100%;
+  height: 600rpx;
+}
+swiper image{
+  width: 100%;
+  height: 600rpx;
+}
+@import "post-item/post-item-tpl.wxss";

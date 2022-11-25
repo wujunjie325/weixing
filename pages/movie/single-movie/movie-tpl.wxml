@@ -1,0 +1,8 @@
+<import src='../stars/stars-tpl.wxml'></import>
+<template name="movieTpl">
+    <view class="movie-container">
+        <image class="movie-img" src="{{coverageUrl}}"></image>
+        <text class="movie-title">{{title}}</text>
+        <template is="starsTpl"  data="{{stars:stars,average:average}}"/>
+    </view>
+</template>
