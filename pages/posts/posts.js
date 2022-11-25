@@ -66,14 +66,5 @@ Page({
    */
   onShareAppMessage:function() {
 
-  },
-  onTapToDetail:function(event){
-    console.log(event)
-    //得到文章编号
-    var postId = event.currentTarget.dataset.postId;
-    //将文章编号作为query参数进行传递
-   wx.navigateTo({
-     url: '/pages/posts/post-detail/post-detail?id='+postId,
-   })
   }
 })

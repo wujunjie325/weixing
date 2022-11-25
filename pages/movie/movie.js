@@ -79,7 +79,6 @@ Page({
     wx.request({
       url: url,
       success:function(res){
-        console.log(this);
         that.processDoubanData(res.data,settedKey,catgoryTitle)
       },
       fail:function(error){
@@ -88,6 +87,7 @@ Page({
     })
   },
   processDoubanData(moviesDouban,settedKey,catgoryTitle){
+    console.log(moviesDouban);
     var movies=[];
     for(var idx in moviesDouban.subjects){
       var subject=moviesDouban.subjects[idx];
@@ -115,6 +115,11 @@ Page({
     var category=event.currentTarget.dataset.category;
     wx.navigateTo({
       url: 'more-movie/more-movie?category='+category,
+    })
+  },
+  to_api_test:function(event){
+    wx.navigateTo({
+      url: 'api-test/apitest',
     })
   }
 })

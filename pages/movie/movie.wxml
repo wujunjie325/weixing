@@ -17,4 +17,7 @@
     <view class="movies-tempiate">
         <template is='movieListTpl' data='{{...top250}}'  />
     </view>
+    <view catchtap="to_api_test">
+      <text>test  test</text>
+    </view>
 </view>
