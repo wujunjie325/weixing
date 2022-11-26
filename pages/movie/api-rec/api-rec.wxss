@@ -1,0 +1,19 @@
+/* pages/movie/api-rec/api-rec.wxss */
+@import '../api-tpl/api_tpl.wxss';
+.single-view-container{
+    float: left;
+    margin-bottom:40rpx ;
+  }
+  .grid-container{
+    height: 1300rpx;
+    margin: 40rpx 0 40rpx 6rpx;
+  }
+  .single-title{
+      font-size: 60rpx;
+      text-align: center;
+  }
+.title-view{
+    margin-top: 30rpx;
+    display: flex;
+    justify-content: center;
+}
