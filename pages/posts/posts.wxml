@@ -3,13 +3,13 @@
 <view>
   <swiper autoplay="false" vertical="{{false}}" interval="2000" duration="1500" circular="true" indicator-dots="true" indicator-active-color="red" indicator-color="yellow">
     <swiper-item>
-      <image src="/images/post/cat.png"></image>
+      <image src="/images/newimage/1.JPG"></image>
     </swiper-item>
     <swiper-item>
-      <image src="/images/post/crab.png"></image>
+      <image src="/images/newimage/2.JPG"></image>
     </swiper-item>
     <swiper-item>
-      <image src="/images/post/sls.jpg"></image>
+      <image src="/images/newimage/3.JPG"></image>
     </swiper-item>
   </swiper>
 </view>

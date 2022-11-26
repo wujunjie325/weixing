@@ -36,3 +36,13 @@ page{
   border-radius: 5px;
   margin-top: 100rpx;
 }
+
+.button-containew{
+    margin-bottom: 300rpx;
+}
+
+.button-get{
+    background-color: #ecc0a8;
+    border: 1px solid #EA5A3C;
+    color: #EA5A3C;
+}

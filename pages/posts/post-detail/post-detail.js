@@ -1,5 +1,5 @@
 const { DBPost } = require("../../../db/DBPost");
-
+const innerAudioContext = wx.createInnerAudioContext();
 // pages/posts/post-detail/post-detail.js
 Page({
 
@@ -21,7 +21,11 @@ Page({
     //调用getPostItemById()这个函数活动具体文章的详情,getPostItemById()函数返回一个对象,对象中有index和data两个属性,其中index是当前文章是数组中的第几篇文章,data则是这篇文章的详细内容
     this.postData = this.dbPost.getPostItemById().data;
     //调用setData方法去渲染,将文章数据赋值给post这个key
-    this.setData({post:this.postData})
+    
+    
+    innerAudioContext.autoplay = true;
+    innerAudioContext.src = this.postData.music.url;
+    this.setData({post:this.postData});
   },
 
   /**
@@ -59,7 +63,7 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload() {
-
+    innerAudioContext.stop();
   },
 
   /**

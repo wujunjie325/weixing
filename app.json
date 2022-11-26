@@ -6,7 +6,8 @@
     "pages/posts/post-comment/post-comment",
     "pages/movie/movie",
     "pages/movie/more-movie/more-movie",
-    "pages/movie/api-test/apitest"
+    "pages/movie/api-test/apitest",
+    "pages/movie/api-rec/api-rec"
   ],
   "tabBar": {
     "color": "#aa3a33",
@@ -14,15 +15,20 @@
     "position": "bottom",
     "list": [{
       "pagePath": "pages/posts/posts",
-      "text": "文章",
+      "text": "音乐介绍",
       "iconPath": "images/icon/collection-anti.png",
       "selectedIconPath": "images/icon/collection.png"
     }, {
-      "pagePath": "pages/movie/movie",
-      "text": "光影",
+      "pagePath": "pages/movie/api-test/apitest",
+      "text": "音乐榜单",
       "iconPath": "images/icon/share-anti.png",
       "selectedIconPath": "images/icon/share.png"
-    }]
+    }, {
+        "pagePath": "pages/movie/api-rec/api-rec",
+        "text": "推荐歌曲",
+        "iconPath": "images/icon/wx_app_voice.png",
+        "selectedIconPath": "images/icon/share.png"
+      }]
   },
     "window": {
       "navigationBarBackgroundColor": "#ecc0a8",

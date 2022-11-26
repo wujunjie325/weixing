@@ -1,7 +1,19 @@
 <view class="container">
-  <image class="avatar" src="/images/avatar/1.png"></image>
-  <text class="motto">Hello,橘子罐头!</text>
-  <view catchtap="onTapJump" class="journey-container">
-    <text class="journey">开启小程序之旅</text>  
-  </view>
+    
+    <image wx:if = "{{hasUserInfo}}" src = "{{userInfo.avatarUrl}}" class = "avatar"></image>
+    <image wx:else class="avatar" src="/images/avatar/1.png"></image>
+    <text wx:if = "{{hasUserInfo}}" class="motto">Hello,{{userInfo.nickName}}</text>
+    <text wx:else class="motto">Hello,junjiewu!</text>
+    <view catchtap="onTapJump" class="journey-container">
+
+    <text wx:if="{{!hasUserInfo}}" class="journey">游客模式</text>
+    <text wx:else class="journey">开启音乐之旅</text>
+    </view>
+    <text class = "button-containew">   </text>
+    <view class = "button-containew">
+        <block wx:if="{{!hasUserInfo}}">
+        <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile" class = "button-get"> 登录 </button>
+        <button wx:else open-type="getUserInfo" bindgetuserinfo="getUserInfo" class = "button-get"> 获取头像昵称 </button>
+        </block>
+    </view>
 </view>
